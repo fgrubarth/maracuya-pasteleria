@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* empiezo grid*/
+.grid{
+    width: 100%;
+    grid-template-areas: "hearder"
+    "main"
+    "footer";
+}
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    grid-area: header;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);;
+}
+main{
+    grid-area: main;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    
+}
+footer{
+    grid-area: footer;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);;
+}
+/*empiezo nav*/
+
+/*320 nav*/
+.contenedorNav .divLogo img{
+    height: 6rem;
+    width: 8rem;
+}
+nav .contenedorNav{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    }
+.contenedorNav .igMenu a img{
+    display: none;
+}
+.contenedorNav .wpMenu a img{
+    display: none;
+}
+.listaMenu{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.listaMenu ul li{
+    
+    list-style: none;
+    padding: 0.3rem;
+}
+
+.listaMenu ul li a{
+    margin: 0 0.7rem;
+    text-decoration: none;
+    color: #987844;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: small; 
+}
+
+/*media 320px*/
+/*main para index*/
+.flexMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor{
+    margin: 2.5rem;
+    
+}
+.contenedor .fotoMain{
+    height: 12rem;
+    width: 16rem;
+    margin: 0.5rem;
+    border: 2px solid #987844;
+
+}
+
+main h1{
+    margin: 1.5rem 0;
+    text-align: center;
+    color: #6c5837;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.servicioInterior{
+    margin: 1rem;
+    border: 2px solid #987844;
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    color: #987844;
+}
+.servicioInterior a{
+    text-decoration: none;
+    color: #ff607b;
+}
+
+
+.encabezadoMain{
+    width: 100%;
+}
+.paraMain{
+    width: 100%;
+}
+
+.arriba{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.arriba .boton{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: whitesmoke;
+    padding: 0.4rem;
+    border-radius: 100%;
+    border: 2px solid #987844;
+    color: #ff607b;
+}
+
+/****main productos 320px****/
+
+main .tituloProductos{
+    font-family:  'Lato',sans-serif;
+    text-align: center;
+ }  
+ .foto{
+     height: 10rem;
+     width: 10rem;
+ }
+ .tortasTartas{
+     display: flex;
+     
+     flex-wrap: wrap;
+ }
+ .contenedorProductos{
+     
+     display: flex;
+     flex-direction: column-reverse;
+     
+     align-items: center;
+     margin: 1.5rem;
+     padding: 0.5rem;
+     border: 2px solid #987844;
+     background-color: whitesmoke;
+ } 
+ .parrafoProductos{
+     padding: 0 1rem;
+     color: #987844;
+     font-family:  'Lato',sans-serif;
+ }
+ 
+ 
+/*main para el mate 320px*/
+.fotoMate{
+    width: 12rem;
+    height: 12rem;
+}
+
+.contenedorMate{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+.cartaMate{
+    display: flex;
+    flex-direction: column-reverse;
+    border: 2px solid #987844;
+    margin: 1.5rem;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+}    
+.cartaMate div h2, p{
+    color: #987844;
+    padding: 0.2rem;
+    font-family:  'Lato',sans-serif;
+}
+/*****catering 320*****/
+
+.fotoCatering{
+    width: 15rem;
+    height: 20rem;
+}
+.contenedorCatering{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.cartaCatering{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 3.9rem;
+    border: 2px solid #987844;
+    background-color: whitesmoke;
+    padding: 1.5rem 1rem;
+}
+.textoCatering ul{
+    margin-bottom: 2rem;
+}
+.textoCatering ul li{
+    list-style: none;
+    font-family:  'Lato',sans-serif;
+    color: #987844;
+
+}
+.textoCatering h1{
+    font-family:  'Lato',sans-serif;
+    color: #987844;
+}
+.textoCatering a{
+    text-decoration: none;
+    font-family:  'Lato',sans-serif;
+    background-color: #987844;
+    color: whitesmoke;
+    padding: 5px;
+    border: 2px solid pink ;
+    border-radius: 10%;
+    margin-left: 4rem;
+    
+}
+
+/*footer 320px*/
+
+.logo{
+    height: 6rem;
+    width: 8rem;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.footer p{
+    font-size: xx-small;
+    font-family: 'Lato', sans-serif;
+}
+.footer ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    padding: 0 1rem;
+    
+    
+}
+.footer ul li{
+    list-style: none;
+    
+}
+.footer ul li img{
+    height: 1rem;
+    width: 1rem;
+    margin-left: 0.5rem;
+}
+.footer ul li a{
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: #987844;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+}
+
+.derechos{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+.derechos a{
+    text-decoration: none;
+    color: #a4a4a1;
+}
+.derechos p,span{
+    font-family:  'Lato',sans-serif;
+    color: #a4a4a1;
+}
+
+/*media 480px*/
+
+@media screen and (min-width: 480px){
+
+    /*******nav*******/
+
+   .contenedorNav .divLogo img{
+        height: 6rem;
+        width: 8rem;
+        }
+    .contenedorNav .igMenu img{
+        margin-top: 4.3rem;
+        margin-left: 1rem;
+        height: 2rem;
+        width: 2rem;
+        }
+    .contenedorNav .wpMenu img{
+        margin-top: 4.3rem;
+        margin-left: 1rem;
+        height: 2rem;
+        width: 2rem;
+        }
+        /***main index 480***/
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    /***main productos 480***/
+    .contenedorProductos{
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }    
+         /*main para el mate 480px*/
+    .contenedorMate{
+        display: flex;
+        flex-wrap: wrap;
+        }
+    .cartaMate{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        border: 2px solid #987844;
+        background-color: whitesmoke;
+        } 
+        /*****catering 480****/
+        .fotoCatering{
+            width: 18rem;
+            height: 23rem;
+        }
+         /*footer 480*/
+        .footer{
+            flex-direction: row;
+
+        }
+        .footer p{
+            padding-bottom: 3rem;
+            }
+        .footer ul{
+            flex-direction: column-reverse;
+            width: auto;
+            } 
+        .footer span{
+            font-size: xx-small;
+            font-family: 'Lato', sans-serif;
+            color: #a4a4a1;
+        }    
+    }
+   
+
+/****media 600px****/
+@media screen and (min-width: 600px) {
+    .contenedorNav .igMenu a img{
+        display: block;
+        margin-top: 2.5rem;
+
+    }
+    .contenedorNav .wpMenu a img{
+        display: block;
+       margin-top: 2.5rem;
+    }
+}   
+
+/* empiezo media 850px*/
+
+@media screen and (min-width: 850px){
+    /********nav 850********/
+    nav .contenedorNav{
+        display: flex;
+        flex-direction: row;
+        }
+    .divLogo a img{
+        order: 1;
+    }
+    .listaMenu{
+        order: 2;
+        display: flex;
+        align-items: center;
+        }
+    .listaMenu ul{
+        display: flex;
+        
+        
+    } 
+    .listaMenu ul li a{
+        margin: 0 0.7rem;
+        text-decoration: none;
+        color: #987844;
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+    }
+    .igMenu{
+        order: 3;
+    }
+    .wpMenu{
+        order: 4;
+    }
+    /*****main index 850*****/
+    .contenedor{
+        flex-direction: row;
+    }
+
+    /****index main servivios 850****/
+    main .servicios{
+    display: grid;
+    grid-template-areas: "a b"
+    "c d";
+    }
+    /****main productos 850*****/
+    .tortasTartas{
+    display: grid;
+    grid-template-areas: "a b"
+    "c d"
+    "f g";
+    }
+    /*main catering*/
+    .contenedorCatering{
+        display: grid;
+        grid-template-areas: "a b";
+    }
+    /*main para el mate*/
+
+    .contenedorMate{
+        display: grid;
+        grid-template-areas: "a b"
+        "c d"
+        "e f";
+    }
+}
+
+/*empiezo media 1200*/
+@media screen and (min-width: 1200px) {
+    /*****nav 1200px*****/
+    .listaMenu ul li a{
+        margin: 0 2.8rem;
+    }
+    /*main index*/
+    .contenedor {
+        justify-content:space-around
+        }
+        .contenedor .fotoMain{
+            width: 23rem;
+            height: 20rem;
+        }
+        .encabezadoMain{
+            margin-top: -4rem;
+        }
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
