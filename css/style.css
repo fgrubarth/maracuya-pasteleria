@@ -12,6 +12,7 @@
     "footer";
 }
 header{
+    z-index: 1;
     position: sticky;
     top: 0;
     width: 100%;
@@ -350,6 +351,19 @@ main .tituloProductos{
 .footer ul li a:hover{
     color: #ff607b;
 }
+/*contancto 320*/
+/*tablas*/
+.texto{
+    color:#33291a;
+}
+.tabla{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 6rem;
+    margin-top: 1rem;
+}
+
 /*media 480px*/
 
 @media screen and (min-width: 480px){
