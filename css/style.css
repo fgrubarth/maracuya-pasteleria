@@ -69,6 +69,28 @@ nav .contenedorNav{
     font-weight: bold;
     font-size: small; 
 }
+/*media para logo-instagram bootstrap*/
+@media screen and (min-width: 320px){
+    .logoRedes{
+        
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px){
+    .logoRedes{
+        display: block;
+    }
+}
+/*estilos link nav bootstrap*/
+.colorLink{
+    margin: 0 0.7rem;
+    text-decoration: none;
+    color: #987844;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: small;
+}
 /*hover nav*/
 
 .listaMenu ul li a:hover{
