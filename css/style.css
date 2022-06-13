@@ -360,7 +360,7 @@ main .tituloProductos{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin-left: 6rem;
+    padding-left: 6rem;
     margin-top: 1rem;
 }
 
