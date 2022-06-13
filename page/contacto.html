@@ -13,6 +13,9 @@
     <!--link css-->
     <link rel="stylesheet" href="../css/style.css">
 
+    <!-- link bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <title>Contacto-Maracuyá Pasteleria</title>
 
     <!--link topografia lato-400-->
@@ -58,87 +61,88 @@
                     <h1>Contacto</h1>
                     <p>Por favor utilice este formulario para consultas que NO sean urgentes (menos de 24 hs.). De lo contrario, por favor comuníquese a los teléfonos 0341-54654486 y líneas rotativas.No utilice este formulario para compras. Utilícelo sólo para consultas</p>
                 </div>
-                <form action="">
+                <form class="row g-3 m-3">
+                    <div class="row g-3">
+                        <div class="col">
+                          <label for="nombre" class="form-label">Nombre</label>  
+                          <input type="text" class="form-control"  id="nombre">
+                        </div>
+                        <div class="col">
+                            <label for="apellido" class="form-label">Apellido</label>  
+                          <input type="text" class="form-control" id="apellido">
+                        </div>
+                      </div>
+                    <div class="col-md-6">
+                      <label for="inputEmail4" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputAddress" class="form-label">Direccion</label>
+                      <input type="text" class="form-control" id="inputAddress">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">Ciudad</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputState" class="form-label">Provincia</label>
+                      <input type="text" class="form-control" id="inputState">
+                    </div>
+                    <div class="col-md-2">
+                      <label for="inputZip" class="form-label">Codigo Postal</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Comentario</label>
+                      </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                  </form>
+                  
+                  <table class="table table-bordered border-primary">
+                    <thead>
+                      <tr>
                     
-                             <legend>formulario de contacto</legend>
-                
-                            <div>
-                                <label for="nombre">Nombre y apellido</label>
-                                <input type="text" name="nombre" placeholder="Nombre y apellido">
-                            </div>
-                            <div>
-                                <label for="dni">DNI</label>
-                                <input type="text" name="dni" placeholder="DNI">
-                            </div>
-                            <div>
-                                <label for="tel">Telefono</label>
-                                <input type="text" name="tel" placeholder="Telefono">
-                            </div>
-                            <div>
-                                <label for="email">Correo electronico</label>
-                                <input type="email" name="email" placeholder="Correo electronico">
-                            </div>
-                            <div>
-                                <label for="direccion">Direccion</label>
-                                <input type="text" name="direccion" placeholder="Direccion">
-                            </div>
-                            <div>
-                                <label for="ciudad">Ciudad</label>
-                                <input type="text" name="ciudad" placeholder="Ciudad">
-                            </div>
-                            <div>
-                                <label for="pais">Pais</label>
-                                <input type="text" name="pais" placeholder="Pais">
-                            </div>
-                            <div>
-                                <label for="comentario">Deje su comentario</label>
-                            </div>
-                            <div>    
-                                <textarea name="comentario" id="" cols="30" rows="10"></textarea>
-                            </div>
-                            <input type="submit">
-                    
-                </form>
-                <div class="hContacto">
-                    <h2>Dias y Horarios</h2>
-                </div>
-                <table border="1">
+                        <th scope="col">Dias</th>
+                        <th scope="col">Horarios</th>
+                        
+                      </tr>
+                    </thead>
                     <tbody>
                         <tr>
-                            <td>Dias</td>
-                            <td>horarios</td>
-                        </tr>
-                        <tr>
-                            <td>lunes</td>
+                            <th scope="row">Lunes</th>
                             <td>9AM a 14PM</td>
                         </tr>
                         <tr>
-                            <td>martes</td>
+                            <th scope="row">Martes</th>
                             <td>9AM a 14PM</td>
                         </tr>
                         <tr>
-                            <td>miercoles</td>
+                            <th scope="row">Miercoles</th>
                             <td>9AM a 14PM</td>
                         </tr>
                         <tr>
-                            <td>jueves</td>
+                            <th scope="row">Jueves</th>
                             <td>9AM a 14PM</td>
                         </tr>
                         <tr>
-                            <td>viernes</td>
+                            <th scope="row">Viernes</th>
                             <td>9AM a 14PM</td>
                         </tr>
                         <tr>
-                            <td>sabado</td>
+                            <th scope="row">Sabado</th>
                             <td>9AM a 14PM</td>
                         </tr>
                         <tr>
-                            <td>domindo</td>
-                            <td>cerrado</td>
+                            <th scope="row">Domingo</th>
+                            <td>9AM a 14PM</td>
                         </tr>
-                    </tbody>
-                
-                </table>
+                    </table>
+
+
+              
                 <div class="arriba">
                     <a href="#arriba" class="boton">ir arriba</a>
                 </div>
@@ -168,6 +172,7 @@
                 </div>
         </footer>
     </div>
-    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
