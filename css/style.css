@@ -82,19 +82,15 @@ nav .contenedorNav{
     }
 }
 /*estilos link nav bootstrap*/
-.colorLink{
-    margin: 0 0.7rem;
-    text-decoration: none;
-    color: #987844;
-    text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    font-size: small;
+.text-{
+    margin: 0 1rem;
+    color: #987844 !important;
+    font-weight: bold !important;
 }
 /*hover nav*/
 
-.listaMenu ul li a:hover{
-    color: #ff607b;
+.text-:hover{
+    color: #ff607b !important;
 }
 /*animacion logo nav*/
 .logo {
