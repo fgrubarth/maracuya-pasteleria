@@ -87,6 +87,12 @@ nav .contenedorNav{
     color: #987844 !important;
     font-weight: bold !important;
 }
+.color-{
+    background-color: whitesmoke;
+}
+.botonMenu:hover{
+    border: 2px solid #987844 !important;
+}
 /*hover nav*/
 
 .text-:hover{
@@ -523,6 +529,7 @@ main .tituloProductos{
     "f g";
     }
     /*main catering*/
+    
     .contenedorCatering{
         display: grid;
         grid-template-areas: "a b";
